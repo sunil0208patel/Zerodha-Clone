@@ -1,0 +1,297 @@
+.watchlist-container {
+  width: 50%;
+  flex-basis: 32%;
+  height: 100%;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 4px 1px rgb(236, 235, 235);
+  overflow-y: auto;
+  position: relative;
+}
+
+/* Search bar */
+.search-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.search {
+  width: 100%;
+  border: none;
+  padding: 15px 20px;
+  font-size: 0.9rem;
+  border-bottom: 0.8px solid rgb(235, 234, 234);
+}
+
+.search:focus {
+  outline: none;
+}
+
+.counts {
+  position: absolute;
+  right: 20px;
+  font-size: 0.9rem;
+  color: rgb(177, 177, 177);
+}
+
+/* List */
+.list {
+  list-style-type: none;
+  padding-bottom: 12%;
+}
+
+.list li {
+  border-bottom: 0.8px solid rgb(235, 234, 234);
+  padding: 12px 14px;
+  position: relative;
+}
+
+/* Item */
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.item:hover {
+  cursor: pointer;
+}
+
+/* Info inside item */
+.iteminfo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.percent,
+.price {
+  font-size: 0.8rem;
+}
+
+.up {
+  color: rgb(103, 201, 136);
+}
+
+.down {
+  color: rgb(223, 73, 73);
+}
+
+/* Actions buttons */
+.actions {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  display: none;
+  align-items: center;
+  gap: 6px;
+  padding-right: 10px;
+}
+
+.list li:hover > .actions {
+  display: flex;
+}
+
+.actions button {
+  height: 30px;
+  width: 50px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Buy button */
+.buy {
+  background-color: #4184f3;
+  color: #fff;
+  border: 1px solid #4184f3;
+}
+.buy:hover {
+  background-color: #5ea0f9;
+  border-color: #5ea0f9;
+}
+
+/* Sell button */
+.sell {
+  background-color: #ff5722;
+  color: #fff;
+  border: 1px solid #ff5722;
+}
+.sell:hover {
+  background-color: #ff7b50;
+  border-color: #ff7b50;
+}
+
+/* Chart & More buttons */
+.action {
+  background-color: #fff;
+  border: 1px solid #9b9b9b;
+  color: #414141;
+}
+.action:hover {
+  background-color: #e0e0e0;
+  border-color: #8c8c8c;
+}
+
+/* Icon inside action buttons */
+.icon {
+  font-size: 1rem;
+  color: #414141;
+}
+/* =====================
+   WATCHLIST RESPONSIVE
+===================== */
+
+/* Mobile S */
+@media (max-width: 480px) {
+  .watchlist-container {
+    padding: 10px;
+  }
+
+  .search-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+
+  .search-container .search {
+    width: 100%;
+    font-size: 0.85rem;
+  }
+
+  .search-container .counts {
+    font-size: 0.8rem;
+    text-align: right;
+  }
+
+  .list li .item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .iteminfo {
+    display: flex;
+    gap: 8px;
+    font-size: 0.8rem;
+  }
+
+  .actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 5px;
+  }
+
+  .actions button {
+    padding: 6px 8px;
+    font-size: 0.75rem;
+  }
+
+  .DoughnutChart {
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+  }
+}
+
+/* Mobile M */
+@media (max-width: 600px) {
+  .search-container .search {
+    font-size: 0.9rem;
+  }
+
+  .iteminfo {
+    font-size: 0.85rem;
+  }
+
+  .actions button {
+    font-size: 0.8rem;
+    padding: 7px 10px;
+  }
+}
+
+/* Mobile L */
+@media (max-width: 767px) {
+  .watchlist-container {
+    max-width: 95%;
+    margin: 0 auto;
+  }
+}
+
+/* Tablet S */
+@media (min-width: 768px) and (max-width: 900px) {
+  .watchlist-container {
+    padding: 15px 20px;
+  }
+
+  .search-container .search {
+    font-size: 1rem;
+  }
+
+  .iteminfo {
+    font-size: 0.95rem;
+  }
+
+  .actions button {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+
+  .DoughnutChart {
+    margin-top: 20px;
+  }
+}
+
+/* Tablet M */
+@media (min-width: 901px) and (max-width: 1024px) {
+  .watchlist-container {
+    padding: 20px 25px;
+  }
+
+  .search-container .search {
+    font-size: 1.05rem;
+  }
+
+  .iteminfo {
+    font-size: 1rem;
+  }
+
+  .actions button {
+    font-size: 1rem;
+    padding: 9px 14px;
+  }
+}
+
+/* Tablet L */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .watchlist-container {
+    padding: 25px 30px;
+  }
+
+  .search-container .search {
+    font-size: 1.1rem;
+  }
+
+  .iteminfo {
+    font-size: 1.05rem;
+  }
+
+  .actions button {
+    font-size: 1.05rem;
+    padding: 10px 16px;
+  }
+
+  .DoughnutChart {
+    margin-top: 25px;
+  }
+}

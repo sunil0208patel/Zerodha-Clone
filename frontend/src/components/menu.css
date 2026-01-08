@@ -83,3 +83,89 @@
 }
 
 
+/* ================= MENU ================= */
+
+.menu-container {
+  flex-basis: 68%;
+  height: 100%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.menu-container img {
+  cursor: pointer;
+}
+
+/* Menu list */
+.menus {
+  display: flex;
+  align-items: center;
+}
+
+.menus ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menus li {
+  display: inline-block;
+  margin-right: 28px;
+}
+
+/* Menu text */
+.menu {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: rgb(70, 70, 70);
+  transition: color 0.2s ease;
+}
+
+.menu:hover {
+  color: rgb(245, 104, 52);
+}
+
+.menu.selected {
+  color: rgb(245, 104, 52);
+}
+
+/* Divider */
+.menus hr {
+  border-left: 1px solid rgb(235, 235, 235);
+  height: 26px;
+  margin: 0 20px;
+}
+
+/* Profile */
+.profile {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.profile .avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: rgb(252, 229, 252);
+  color: rgb(221, 139, 221);
+  font-size: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+}
+
+.profile .username {
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: rgb(83, 83, 83);
+}
+
+.profile:hover .username {
+  color: rgb(223, 91, 43);
+}

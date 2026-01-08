@@ -22,7 +22,7 @@ const Login = () => {
   const handleInputData = (e) => {
     const { name, value } = e.target;
     setUserData({ ...userData, [name]: value });
-    setErrors({ ...errors, [name]: "" }); // clear error on typing
+    setErrors({ ...errors, [name]: "" });
   };
 
   const validate = () => {
@@ -44,8 +44,8 @@ const Login = () => {
     e.preventDefault();
     if (!validate()) return;
 
-    // ✅ redirect AFTER successful login
-    navigate("/dashboard");
+  
+    navigate("/dash");
   };
 
   return (

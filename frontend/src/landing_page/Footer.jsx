@@ -18,53 +18,68 @@ const Footer = () => {
               <p className="mt-3" style={{ fontSize: "14px" }}>
                 © 2010 - 2024, Zerodha Broking Ltd. All rights reserved.
               </p>
-              <div className="fs-4 d-flex gap-4 ">
-                <Link to="/">
-                  <i
-                    className="fa fa-twitter-square icon-color"
-                    aria-hidden="true"
-                  ></i>{" "}
-                </Link>
-                <Link to="/">
-                  <i
-                    className="fa fa-facebook-square icon-color"
-                    aria-hidden="true"
-                  ></i>{" "}
-                </Link>
-                <Link to="/">
-                  <i
-                    className="fa fa-instagram icon-color"
-                    aria-hidden="true"
-                  ></i>{" "}
-                </Link>
-                <Link to="/">
-                  <i
-                    className="fa fa-linkedin-square icon-color"
-                    aria-hidden="true"
-                  ></i>
-                </Link>
-              </div>
-              <hr />
-              <div className="fs-4 d-flex gap-4 text-muted">
-                <Link to="/">
-                  <i
-                    className="fa fa-youtube-play icon-color"
-                    aria-hidden="true"
-                  ></i>{" "}
-                </Link>
-                <Link to="/">
-                  <i
-                    className="fa fa-whatsapp icon-color"
-                    aria-hidden="true"
-                  ></i>{" "}
-                </Link>
-                <Link to="/">
-                  <i
-                    className="fa fa-telegram icon-color"
-                    aria-hidden="true"
-                  ></i>
-                </Link>
-              </div>
+              <div className="fs-4 d-flex gap-4">
+  <a
+    href="https://twitter.com"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <i className="fa fa-twitter-square icon-color" />
+  </a>
+
+  <a
+    href="https://facebook.com"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <i className="fa fa-facebook-square icon-color" />
+  </a>
+
+  <a
+    href="https://instagram.com"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <i className="fa fa-instagram icon-color" />
+  </a>
+
+  <a
+    href="https://linkedin.com"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <i className="fa fa-linkedin-square icon-color" />
+  </a>
+</div>
+
+<hr />
+
+<div className="fs-4 d-flex gap-4 text-muted">
+  <a
+    href="https://youtube.com"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <i className="fa fa-youtube-play icon-color" />
+  </a>
+
+  <a
+    href="https://whatsapp.com"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <i className="fa fa-whatsapp icon-color" />
+  </a>
+
+  <a
+    href="https://telegram.org"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <i className="fa fa-telegram icon-color" />
+  </a>
+</div>
+
             </div>
             <div className="col mt-4 footer">
               <h5>Company</h5>

@@ -10,6 +10,7 @@ import MoreHoriz from "@mui/icons-material/MoreHoriz";
 import GeneralContext from "./GeneralContext";
 import { DoughnutChart } from "./DoughnutChart";
 
+import "./watchlist.css";
 // Define labels for DoughnutChart
 const labels = watchlist.map((subArray) => subArray["name"]);
 

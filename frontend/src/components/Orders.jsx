@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import "./orders.css";
 const Orders = () => {
   return (
     <div className="orders">

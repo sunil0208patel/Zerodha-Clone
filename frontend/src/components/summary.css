@@ -66,3 +66,93 @@
     font-size: 1.38rem;
   }
 }
+/* ================= SUMMARY ================= */
+
+/* Username header */
+.username {
+  padding: 12px 16px;
+}
+
+.username h6 {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+/* Divider */
+.divider {
+  border: none;
+  border-bottom: 0.8px solid rgb(235, 234, 234);
+  margin: 10px 0;
+}
+
+/* Section wrapper */
+.section {
+  padding: 12px 16px;
+}
+
+.section span p {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: rgb(130, 130, 130);
+  margin-bottom: 10px;
+}
+
+/* Data layout */
+.data {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+/* Left block */
+.first {
+  flex: 1;
+}
+
+.first h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.first p {
+  font-size: 0.75rem;
+  color: rgb(140, 140, 140);
+}
+
+/* Profit text */
+.profit {
+  color: rgb(103, 201, 136);
+}
+
+.profit small {
+  font-size: 0.75rem;
+  margin-left: 4px;
+}
+
+/* Right block */
+.second {
+  flex: 1;
+}
+
+.second p {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: rgb(120, 120, 120);
+}
+
+.second span {
+  font-weight: 600;
+  color: #222;
+}
+
+/* Horizontal rule inside data */
+.data hr {
+  height: 42px;
+  border: none;
+  border-left: 0.8px solid rgb(235, 234, 234);
+}

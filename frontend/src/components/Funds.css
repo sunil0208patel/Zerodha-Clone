@@ -1,80 +1,203 @@
+/* ================= FUNDS ================= */
 
+/* Top action bar */
+.funds {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 30px;
+}
+
+.funds p {
+  font-size: 0.8rem;
+  color: rgb(180, 180, 180);
+  margin-right: 10px;
+}
+
+/* Buttons */
+.btn {
+  text-decoration: none;
+  padding: 8px 18px;
+  border-radius: 2px;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #ffffff;
+  margin-left: 6px;
+}
+
+.btn-green {
+  background-color: #4caf50;
+}
+
+.btn-blue {
+  background-color: #4184f3;
+}
+
+.btn-green:hover {
+  background-color: #7bdd7f;
+}
+
+.btn-blue:hover {
+  background-color: #74a7fa;
+}
+
+/* ================= LAYOUT ================= */
+
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.col {
+  flex-basis: 48%;
+}
+
+/* ================= EQUITY TABLE ================= */
+
+.table {
+  border: 1px solid #dddddd;
+  padding: 30px 40px;
+}
+
+.table .data {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.table .data p {
+  font-size: 0.9rem;
+  color: rgb(120, 120, 120);
+}
+
+.table .imp {
+  font-size: 1.4rem;
+  color: rgb(50, 50, 50);
+}
+
+.table .colored {
+  color: #4184f3;
+}
+
+.table hr {
+  border: none;
+  height: 1px;
+  background: #e0e0e0;
+  margin: 18px 0;
+}
+
+/* ================= COMMODITY ================= */
+
+.commodity {
+  padding: 60px 30px;
+  text-align: center;
+}
+
+.commodity p {
+  font-size: 0.9rem;
+  color: rgb(170, 170, 170);
+  margin-bottom: 20px;
+}
+/* =====================
+   FUNDS RESPONSIVE
+===================== */
+
+/* Mobile S */
 @media (max-width: 480px) {
-
   .funds {
     flex-direction: column;
-    align-items: stretch;
+    text-align: center;
     gap: 10px;
   }
 
   .funds p {
-    font-size: 0.8rem;
-    text-align: center;
+    font-size: 0.9rem;
   }
 
-  .btn {
+  .funds .btn {
     width: 100%;
-    text-align: center;
+    margin-bottom: 10px;
   }
 
   .row {
     flex-direction: column;
-    gap: 16px;
   }
 
-  .table {
-    padding: 12px;
+  .col {
+    width: 100%;
+    margin-bottom: 20px;
   }
 
-  .data p {
-    font-size: 0.8rem;
+  .table .data {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
   }
 }
+
+/* Mobile M */
 @media (max-width: 600px) {
-
   .funds p {
-    font-size: 0.85rem;
+    font-size: 1rem;
   }
 
-  .table {
-    padding: 14px;
-  }
-
-  .data {
-    margin-bottom: 10px;
+  .funds .btn {
+    padding: 10px 15px;
   }
 }
+
+/* Mobile L */
 @media (max-width: 767px) {
-
   .funds {
-    margin-bottom: 16px;
+    padding: 0 10px;
   }
 
-  .data p {
-    font-size: 0.85rem;
-  }
-
-  .commodity {
-    padding: 16px;
-  }
-}
-@media (min-width: 901px) and (max-width: 1024px) {
-
-  .row {
-    gap: 20px;
-  }
-
-  .data p {
+  .table .data {
     font-size: 0.9rem;
   }
 }
-@media (min-width: 1025px) and (max-width: 1200px) {
 
-  .row {
-    gap: 22px;
+/* Tablet S */
+@media (min-width: 768px) and (max-width: 900px) {
+  .funds {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
   }
 
-  .table {
-    padding: 16px;
+  .row {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .col {
+    width: 48%;
+  }
+}
+
+/* Tablet M */
+@media (min-width: 901px) and (max-width: 1024px) {
+  .col {
+    width: 48%;
+  }
+
+  .funds .btn {
+    padding: 12px 20px;
+  }
+}
+
+/* Tablet L */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .col {
+    width: 45%;
+  }
+
+  .funds p {
+    font-size: 1.1rem;
   }
 }

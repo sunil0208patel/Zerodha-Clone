@@ -59,3 +59,63 @@
 
 
 
+/* ================= POSITIONS ================= */
+
+/* Page title */
+.title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  margin: 16px 0 12px;
+}
+
+/* Table wrapper */
+.order-table {
+  width: 100%;
+  overflow-x: auto;
+  box-shadow: 0px 0px 4px 1px rgb(236, 235, 235);
+  border-radius: 4px;
+}
+
+/* Table */
+.order-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8rem;
+}
+
+/* Header */
+.order-table thead {
+  background-color: #fafafa;
+}
+
+.order-table th {
+  text-align: left;
+  padding: 12px 10px;
+  font-weight: 600;
+  color: #555;
+  border-bottom: 0.8px solid rgb(235, 234, 234);
+}
+
+/* Body cells */
+.order-table td {
+  padding: 12px 10px;
+  border-bottom: 0.8px solid rgb(235, 234, 234);
+  color: #333;
+}
+
+/* Profit & Loss */
+.profit {
+  color: rgb(103, 201, 136);
+  font-weight: 500;
+}
+
+.loss {
+  color: rgb(223, 73, 73);
+  font-weight: 500;
+}
+
+/* Hover */
+.order-table tbody tr:hover {
+  background-color: rgb(248, 248, 248);
+}

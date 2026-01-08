@@ -96,3 +96,89 @@
     font-size: 0.88rem;
   }
 }
+/* ================= HOLDINGS ================= */
+
+/* Title */
+.title {
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: rgb(71, 71, 71);
+  margin-bottom: 20px;
+}
+
+/* ================= TABLE ================= */
+
+.order-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.order-table thead tr {
+  border-bottom: 1px solid rgb(220, 220, 220);
+}
+
+.order-table th {
+  padding: 14px 10px;
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: rgb(140, 140, 140);
+  text-align: right;
+}
+
+.order-table th:first-child,
+.order-table td:first-child {
+  text-align: left;
+}
+
+.order-table td {
+  padding: 12px 10px;
+  font-size: 0.9rem;
+  color: rgb(73, 73, 73);
+  text-align: right;
+  border-bottom: 1px solid rgb(235, 235, 235);
+}
+
+/* Profit & Loss colors */
+.order-table td.profit {
+  color: rgb(72, 194, 55);
+}
+
+.order-table td.loss {
+  color: rgb(250, 118, 78);
+}
+
+/* ================= SUMMARY ROW ================= */
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 40px 0;
+}
+
+.col {
+  flex-basis: 33%;
+  text-align: center;
+}
+
+.col h5 {
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: rgb(71, 71, 71);
+}
+
+.col h5 span {
+  font-size: 0.9rem;
+}
+
+.col p {
+  font-size: 0.8rem;
+  color: rgb(150, 150, 150);
+  font-weight: 300;
+  margin-top: 6px;
+}
+
+/* Profit highlight */
+.row .col:last-child h5 {
+  color: rgb(72, 194, 55);
+}

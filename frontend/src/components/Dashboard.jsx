@@ -8,7 +8,7 @@ import Holdings from "./Holdings";
 import Positions from "./Positions";
 import Funds from "./Funds";
 
-
+import "./dashboard.css";
 const Dashboard = () => {
   return (
     <div className="dashboard-container">
