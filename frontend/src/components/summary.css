@@ -1,0 +1,68 @@
+
+@media (max-width: 480px) {
+
+  .username h6 {
+    font-size: 0.85rem;
+    text-align: center;
+  }
+
+  .data {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .data hr {
+    display: none;
+  }
+
+  .first h3 {
+    font-size: 1.2rem;
+  }
+
+  .section span p {
+    font-size: 0.75rem;
+  }
+}@media (max-width: 600px) {
+
+  .first h3 {
+    font-size: 1.25rem;
+  }
+
+  .second p {
+    font-size: 0.75rem;
+  }
+}
+@media (max-width: 767px) {
+
+  .section {
+    margin-bottom: 16px;
+  }
+
+  .divider {
+    margin: 10px 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+
+  .data {
+    gap: 12px;
+  }
+
+  .first h3 {
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 901px) and (max-width: 1024px) {
+
+  .first h3 {
+    font-size: 1.35rem;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1200px) {
+
+  .first h3 {
+    font-size: 1.38rem;
+  }
+}

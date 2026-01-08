@@ -1,0 +1,55 @@
+/* HERO */
+.pricing-hero {
+  padding: 80px 15px;
+}
+
+.pricing-hero h1 {
+  font-size: 3rem;
+}
+
+.pricing-hero h5 {
+  max-width: 700px;
+  margin: auto;
+}
+
+/* PRICING CARDS */
+.pricing-card img {
+  width: 100%;
+  max-width: 260px;
+}
+
+.pricing-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* BROKERAGE */
+.small-text li {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+/* LINKS */
+.link-title {
+  color: #387ed1;
+  font-weight: 500;
+}
+
+/* TABLET */
+@media (max-width: 992px) {
+  .pricing-hero h1 {
+    font-size: 2.2rem;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 576px) {
+  .pricing-hero {
+    padding: 40px 10px;
+  }
+
+  .pricing-card img {
+    max-width: 200px;
+  }
+}

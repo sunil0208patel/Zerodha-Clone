@@ -1,0 +1,80 @@
+
+@media (max-width: 480px) {
+
+  .funds {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .funds p {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .table {
+    padding: 12px;
+  }
+
+  .data p {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 600px) {
+
+  .funds p {
+    font-size: 0.85rem;
+  }
+
+  .table {
+    padding: 14px;
+  }
+
+  .data {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 767px) {
+
+  .funds {
+    margin-bottom: 16px;
+  }
+
+  .data p {
+    font-size: 0.85rem;
+  }
+
+  .commodity {
+    padding: 16px;
+  }
+}
+@media (min-width: 901px) and (max-width: 1024px) {
+
+  .row {
+    gap: 20px;
+  }
+
+  .data p {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1200px) {
+
+  .row {
+    gap: 22px;
+  }
+
+  .table {
+    padding: 16px;
+  }
+}

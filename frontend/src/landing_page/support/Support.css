@@ -1,0 +1,84 @@
+/* HERO */
+.support-hero {
+  background-color: #387ed1;
+  color: #fff;
+  padding: 60px 20px;
+}
+
+.search-box {
+  position: relative;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 14px 45px 14px 15px;
+  border: none;
+  border-radius: 4px;
+}
+
+.search-icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #555;
+}
+
+.quick-links a {
+  color: #fff;
+  margin-right: 20px;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.quick-links a:hover {
+  text-decoration: underline;
+}
+
+/* FEATURED */
+.featured ul li {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+
+/* TICKETS */
+.ticket-section h4 {
+  margin-bottom: 30px;
+}
+
+.ticket-card h5 {
+  font-size: 1.05rem;
+  margin-bottom: 10px;
+}
+
+.ticket-card a {
+  font-size: 0.9rem;
+  display: block;
+  margin-left: 22px;
+  text-decoration: none;
+  color: #387ed1;
+}
+
+.ticket-card a:hover {
+  text-decoration: underline;
+}
+
+/* TABLET */
+@media (max-width: 992px) {
+  .quick-links a {
+    display: inline-block;
+    margin-bottom: 8px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 576px) {
+  .support-hero {
+    padding: 40px 15px;
+  }
+
+  .quick-links a {
+    display: block;
+    margin-bottom: 6px;
+  }
+}

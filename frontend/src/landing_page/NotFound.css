@@ -1,0 +1,48 @@
+/* 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 70vh; 
+}
+
+
+h2 {
+  font-size: 3rem;
+  color: #dc3545; 
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #6c757d; 
+} */
+/* Responsive Media Queries */
+
+/* Small devices (phones) */
+@media (max-width: 480px) {
+  h2 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+
+/* Medium devices (tablets) */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+  p {
+    font-size: 1.1rem;
+  }
+}

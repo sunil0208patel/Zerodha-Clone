@@ -1,0 +1,273 @@
+/* Container for all sections */
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.section-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.section-row.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Section content */
+.section-content {
+  flex: 1 1 50%;
+  min-width: 280px;
+  text-align: left;
+}
+
+.section-content h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.section-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.section-links a {
+  text-decoration: none;
+  color: #007bff;
+  margin-right: 20px;
+  font-size: 0.95rem;
+}
+
+.section-links a:hover {
+  text-decoration: underline;
+}
+
+.app-badges img {
+  width: 120px;
+  margin-right: 15px;
+  margin-top: 15px;
+}
+
+/* Section images */
+.section-image {
+  flex: 1 1 50%;
+  min-width: 280px;
+  text-align: center;
+}
+
+.section-image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Universe Section */
+.universe {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.universe h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #6c757d;
+}
+
+.universe p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+.universe-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.universe-card {
+  flex: 1 1 200px;
+  max-width: 250px;
+  text-align: center;
+}
+
+.universe-card img {
+  width: 70%;
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.universe-card p {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.universe button {
+  padding: 15px 40px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.universe button:hover {
+  background-color: #0056b3;
+}
+
+/* Hero section */
+.hero-container {
+  background-color: #387ed1;
+  color: #fff;
+  padding: 50px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.hero-left {
+  flex: 1 1 60%;
+  min-width: 280px;
+}
+
+.hero-left h5:first-child {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.hero-left h5.fs-4 {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.hero-left .search-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.hero-left input[type="text"] {
+  width: 100%;
+  padding: 12px 40px 12px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.hero-left .search-icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #333;
+}
+
+.hero-left .quick-links a {
+  color: #fff;
+  margin-right: 20px;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.hero-left .quick-links a:hover {
+  text-decoration: underline;
+}
+
+.hero-right {
+  flex: 1 1 35%;
+  min-width: 250px;
+  text-align: left;
+}
+
+.hero-right h6,
+.hero-right h5,
+.hero-right p,
+.hero-right ul {
+  margin-bottom: 15px;
+}
+
+.hero-right ul li {
+  margin-bottom: 10px;
+}
+
+.hero-right a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .section-image img {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 992px) {
+  .section-content, .section-image {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .app-badges img {
+    width: 100px;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    padding: 30px 15px;
+  }
+
+  .hero-left, .hero-right {
+    flex: 1 1 100%;
+    min-width: 100%;
+    text-align: center;
+  }
+
+  .hero-left h5.fs-4 {
+    font-size: 1.3rem;
+  }
+
+  .hero-left .quick-links a {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .section-row.reverse {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  .left-section h2, .right-section h2, .universe h2 {
+    font-size: 1.5rem;
+  }
+
+  .section-content p, .universe p, .universe-card p {
+    font-size: 0.95rem;
+  }
+
+  .universe-card img {
+    width: 60%;
+  }
+
+  .universe button {
+    width: 80%;
+    padding: 12px 0;
+  }
+
+  .section-image img {
+    width: 90%;
+  }
+}

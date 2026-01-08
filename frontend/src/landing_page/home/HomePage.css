@@ -1,0 +1,46 @@
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .stats-container,
+  .pricing-home,
+  .education-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .stats-left,
+  .stats-right,
+  .pricing-left,
+  .pricing-right,
+  .education-left,
+  .education-right {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .pricing-right .pricing-row {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .stats-left h1 {
+    font-size: 1.4rem;
+  }
+
+  .pricing-home .pricing-left h2 {
+    font-size: 1.4rem;
+  }
+
+  .education-right h3 {
+    font-size: 1.4rem;
+  }
+
+  .pricing-right .pricing-item p {
+    font-size: 0.7rem;
+  }
+}
